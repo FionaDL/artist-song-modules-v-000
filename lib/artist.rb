@@ -9,7 +9,7 @@ class Artist
   include Memorable: :InstanceMethods, Paramable
 
   def initialize
-    @@artists << self
+    super
     @songs = []
   end
 
